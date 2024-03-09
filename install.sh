@@ -162,7 +162,7 @@ services:
             - $PATH_INSTALL/proxy/fpms/$DIR:/etc/nginx/sites-available
         restart: always
     fpm$SERVICE_NUMBER:
-        image: rash07/php-fpm:7.4
+        image: rash07/php-fpm:7.3
         working_dir: /var/www/html
         volumes:
             - ./ssh:/root/.ssh
